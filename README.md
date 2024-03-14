@@ -5,3 +5,6 @@ https://www.figma.com/file/U1XBuzxUHo2tfqFbHa9Lh3/Untitled?type=design&node-id=0
 - Cukrárna
 - Veterina
 - Armyshop
+- Pivovar
+- Památka
+- Vinice
