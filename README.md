@@ -1,4 +1,4 @@
-#Marek Šollar | Projekt Rabira
+# Marek Šollar | Projekt Rabira
 - Tvorba webové stránky pro smyšlenou cukrárnu a kavárnu vyskytující se v centru Liberci.
 
 ## :cupcake: Figma:
