@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo & barevné schéma  -->
+    <!-- <meta name="theme-color" content="#525929"> NEFUNKČNÍ -->
+    <link rel="icon" href="../images/icons/favicon.svg">
+
+    <!-- Kaskádové styly  -->
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/navbarFooter.css">
+    <link rel="stylesheet" href="../styles/components.css">
+
+     <!-- Typografie  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>O nás | Rabira</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Rabira</a>
+            </div>
+            <menu class="hMenu menu-toggle is-active">
+                <li><a href="../index.html">Domů</a></li>
+                <li><a href="../onas.html" class="activated">O nás</a></li>
+                <li><a href="../galerie.html">Galerie</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </menu>
+            <div class="hMenu ikonky is-active">
+                <a id="FacebookIcon" href="https://www.facebook.com/"></a>
+                <a id="InstagramIcon" href="https://www.instagram.com/"></a>
+                <a id="MapsIcon" href="#"></a>
+            </div>
+            
+            <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>O nás</h1>
+        <section class="onasGrid">
+            <p id="s1">V malebné uličce v samém srdci Liberce se nachází naše útulná kavárna Rabira. Nechte se okouzlit neodolatelnou vůní čerstvě upečených dortíků a lahodně vonící kávy, která láká kolemjdoucí. Vstupte a ponořte se do světa sladkých snů, kde si každý mlsný jazýček najde to své. Nabízíme širokou škálu dezertů a příjemné posezení v útulném interiéru plném pohody.</p>
+            <img id="o1" src="../images/other/interier.jpg">
+            <p id="s2">Nabízíme vám klidné útočiště od shonu všedního dne. Vychutnejte si šálek lahodné kávy nebo čaje a ponořte se do knížky, pusťte se do práce na notebooku, studujte nebo si jen tak popovídejte s přáteli a rodinou. V Rabira najdete ideální prostředí pro relaxaci i aktivní odpočinek.</p>
+            <img id="o2" src="../images/other/produkt.jpg">
+            <p id="s3">Nechte se zlákat neodolatelnou chutí našich lahodných dortíků, jako je "Čokoládový sen s malinami", "Jahodové lasagne s mascarpone" nebo "Pistáciový dortík s krémem a posypem". Objevte kouzlo příjemné atmosféry a vstřícného personálu, který se o vás s úsměvem postará. V Rabira si najde každý chvilku klidu a pohody a dopřeje si sladké potěšení, na které budete s láskou vzpomínat.</p>
+        </section>
+        <section class="tym">
+            <h2>Náš tým</h2>
+            <div class="osoby">
+                <div class="karta">
+                    <img class="profilovka" src="../images/people/jan.png">
+                    <p class="jmenovka">Jan</p>
+                    <p class="pozice">Majitel</p>
+                </div>
+                <div class="karta">
+                    <img class="profilovka" src="../images/people/anna.png">
+                    <p class="jmenovka">Anna</p>
+                    <p class="pozice">Vedoucí</p>
+                </div>
+                <div class="karta">
+                    <img class="profilovka" src="../images/people/petr.png">
+                    <p class="jmenovka">Petr</p>
+                    <p class="pozice">Cukrář</p>
+                </div>
+                <div class="karta">
+                    <img class="profilovka" src="../images/people/bara.png">
+                    <p class="jmenovka">Bára</p>
+                    <p class="pozice">Cukrářka</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <div class="kudyknam">
+                <p class="tucny">Kudy k nám</p>
+                <p>Kavárna Rabira</p>
+                <p>Pod Zvonkem 12</p>
+                <p>463 01 Liberec</p>
+            </div>
+            <div class="kontakt">
+                <p class="tucny">Kontakt</p>
+                <p>info@rabira.cz</p>
+                <p>+420 725 888 653</p>
+                <p>kavárna a cukrárna</p>
+            </div>
+            <div class="oteviracidoba">
+                <p class="tucny">Otevírací doba</p>
+                <div class="tabulkaOteviraciDoba">
+                    <p>Pondělí</p><p>Zavřeno</p>
+                    <p>Út - Čt</p><p>10:00 - 11:00</p>
+                    <p>So - Ne</p><p>10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Cukrárna Rabira</p>
+            <p>Webové stránky vytvořil Marek Šollar</p>
+        </div>
+    </footer>
+    <script src="../hamburger.js"></script>
+</body>
+</html>
