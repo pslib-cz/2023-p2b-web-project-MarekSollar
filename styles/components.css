@@ -1,0 +1,337 @@
+:root {
+    --primary: #525929;
+    --secondary: #626A3F;
+    --black: #16150B;
+    --white: #FFFAFA;
+}
+
+/* Mapa + Adresa */
+.mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+}
+
+iframe {
+    height: 20em;
+    aspect-ratio: 4/3;
+}
+
+.adresa {
+    margin-top: 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "jmeno prijmeni"
+        "email email"
+        "zprava zprava";
+    gap: 1em;
+}
+
+#jmeno {
+    grid-area: jmeno;
+}
+
+#prijmeni {
+    grid-area: prijmeni;
+}
+
+#email {
+    grid-area: email;
+}
+
+#zprava {
+    grid-area: zprava;
+}
+
+
+input,textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  
+
+
+
+/* Náš tým*/
+.osoby {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    text-align: center;
+}
+
+.karta img {
+    height: 10em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+p.pozice {
+    margin: 0.1em 0;
+}
+
+p.telefon::before {
+    content: "";
+    display: block;
+    background: url(../images/icons/phone.svg) no-repeat;
+    height: 2em;
+    aspect-ratio: 1/1;
+    float: left;
+    margin-right: -.5em;
+}
+
+p.email::before {
+    content: "";
+    display: block;
+    background: url(../images/icons/mail.svg) no-repeat;
+    height: 2em;
+    aspect-ratio: 1/1;
+    float: left;
+    margin-right: -.5em;
+}
+
+/* Onas */
+.onasGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "uvod interier"
+        "atmosfera atmosfera"
+        "dortukazka nabidka";
+    row-gap: 5em;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 360px) and (max-width:960px) {
+    .onasGrid {
+        row-gap: 2em;
+    }
+}
+
+#s1 {
+    grid-area: uvod;
+}
+
+#s2 {
+    grid-area: atmosfera;
+}
+
+#s3 {
+    grid-area: nabidka;
+}
+
+.onasGrid img { 
+    height: 20vw;
+    width: auto;
+    border-radius: 20px;
+}
+
+#o1 {
+    grid-area: interier;
+}
+
+#o2 {
+    grid-area: dortukazka;
+}
+
+.ikonky a {
+    width: 2em;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+}
+
+#FacebookIcon {
+    background-image: url(../images/icons/facebook.svg);
+}
+
+
+/*INDEX*/
+
+
+#suroviny {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "recepty suroviny catering";
+    column-gap: 8em;
+    text-align: center;
+}
+
+#surovina1 {
+    grid-area: recepty;
+}
+
+#surovina2 {
+    grid-area: suroviny;
+}
+
+#surovina3 {
+    grid-area: catering;
+}
+
+#suroviny img {
+    height: 5em;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    object-fit: cover;
+    margin: 1em 0;
+}
+
+#recenze1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2em;
+}
+
+#recenze2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2em;
+}
+
+#recenze1 {
+    padding-bottom: 3em;
+}
+
+
+.hodnoceni {
+    margin: 0;
+}
+
+.recenze img {
+    height: 10em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.nasVyber {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3em;
+}
+
+.nasVyber img {
+    height: 20em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.nasVyber p:last-of-type {
+    margin-bottom: 2em;
+}
+
+.nasVyber a {
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+    font-size: 1.3rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+}
+/* Telefony */
+@media only screen and (min-width: 360px) and (max-width:960px) {
+    .mapa {
+        flex-direction: column;
+    }
+
+    .osoby {
+        flex-direction: column;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "jmeno"
+            "prijmeni"
+            "email"
+            "zprava";
+    }
+
+    .onasGrid {
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-template-areas: 
+            "uvod"
+            "interier"
+            "atmosfera"
+            "dortukazka"
+            "nabidka";
+
+    }
+
+    /* Kravina opravit */
+    .onasGrid img { 
+        height: 50vw;
+        width: auto;
+    }
+
+    #suroviny {
+        grid-template-columns: 1fr;
+        
+        grid-template-areas: 
+            "recepty"
+            "suroviny"
+            "catering";
+    }
+
+    #suroviny article:not(:last-child) {
+        border-bottom: 3px solid var(--primary);
+    }
+
+    #recenze1 {
+        grid-template-rows: 1fr 1.8fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #recenze2 .obsahRecenze {
+        grid-area: sofieRecenze;
+    }
+
+    #recenze2 .profilovkaRecenze {
+        grid-area: sofie;
+    }
+
+    #recenze2 {
+        grid-template-rows: 1fr 1.8fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-template-areas: 
+            "sofie"
+            "sofieRecenze";
+    }
+
+    .nasVyber {
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+        text-align: center;
+    }
+}
+
+.tiramisu {
+    margin: -2em -2em;
+    background-color: var(--secondary);
+}

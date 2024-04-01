@@ -1,0 +1,201 @@
+/* Základní nastavení */
+:root {
+    --primary: #525929;
+    --secondary: #626A3F;
+    --black: #16150B;
+    --white: #FFFAFA;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+.prazdno {
+    padding: 40em 0;
+}
+
+/* Navbar */
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    background: var(--primary);
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu li {
+    display: block;
+}
+
+
+.ikonky {
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.navigace {
+    display: flex;
+    
+}
+
+.ikonky a {
+    width: 2em;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+}
+
+#FacebookIcon {
+    background-image: url(../images/icons/facebook.svg);
+}
+
+#InstagramIcon {
+    background-image: url(../images/icons/instagram.svg);
+}
+
+#MapsIcon {
+    background-image: url(../images/icons/map.svg);
+}
+
+/* Hamburger se ukáže i na obrazovkách tabletů, aby to neníčilo vizuál */
+@media screen and (max-width: 1035px) {
+    .checkbox {
+        display: none;
+    }
+    .hamburger {
+        --line: 8px;
+        width: 40px;
+        aspect-ratio: 1/1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--line);
+    }
+    .hamburger span {
+        height: var(--line);
+        width: 100%;
+        background: var(--white);
+        border-radius: calc(var(--line) / 2);
+        transform-origin: right center;
+        transition: transform .3s, opacity 0.2s .2s, 
+                    translate .4s .4s;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hMenu {
+        background-color: var(--secondary);
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        overflow: hidden;
+        transition: left 2.5s;
+    }
+    
+    .menu-toggle {
+        left: -100%;
+        transition: left 0.5s;
+    }
+    
+    .menu-toggle.is-active {
+        left: 0;
+    }
+
+    header:has(.menu-toggle.is-active) .hamburger span:nth-of-type(1) {
+        transform: rotate(45deg);
+        translate: 0 30px;
+    }
+
+    header:has(.menu-toggle.is-active) .hamburger span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    header:has(.menu-toggle.is-active) .hamburger span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        translate: 0 -30px;
+    }
+    
+    .ikonky {
+        position: absolute;
+        left: -100%;
+        top: 16.9em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1em;
+        border-top: 2px solid var(--white);
+        transition: left 0.5s;
+    }
+
+    .ikonky.is-active {
+        left: 0;
+    }
+}
+
+
+/* Footer */
+footer {
+    border-top: 10px solid var(--primary);
+}
+
+.footerInfo {
+    background-color:  var(--secondary);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1.5em 2em;
+    border-top: 5px solid var(--white);
+}
+
+.copyright {
+    padding: .5em 2em;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--primary);
+}
+
+footer p {
+    color: var(--white);
+    margin: .3em;
+}
+
+
+
+.tabulkaOteviraciDoba {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+

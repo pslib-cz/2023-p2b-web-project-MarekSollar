@@ -1,0 +1,66 @@
+:root {
+    --primary: #525929;
+    --secondary: #626A3F;
+    --black: #16150B;
+    --white: #FFFAFA;
+}
+
+/* Počítače */
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: var(--primary);
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--primary);
+    text-align: center;
+}
+
+p { 
+    font-family: "Dosis", sans-serif;
+    /* font-size: 1rem;*/
+    font-size: calc(15px + 0.390625vw);
+    color: var(--black);
+}
+
+p.subHeader {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.3rem;
+    font-weight: 100;
+    color: var(--primary);
+    text-align: center;
+}
+
+/*
+.logo =  64
+.footer p | Nadpis
+*/
+
+/* Telefony */
+@media only screen and (min-width: 360px) and (max-width:960px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    p { 
+        font-size: 1rem;
+    }
+}
+
+/* experiment */
+main {
+    padding: 0 5em;
+}
+
+section {
+    padding-bottom: 2em;
+}

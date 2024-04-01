@@ -1,0 +1,124 @@
+:root {
+    --primary: #525929;
+    --secondary: #626A3F;
+    --black: #16150B;
+    --white: #FFFAFA;
+}
+
+/* experiment */
+main {
+    padding: 0 5em;
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 360px) and (max-width:960px) {
+    main {
+        padding: 0 1.5em;
+    }
+}
+
+
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: calc(3.5rem + 0.390625vw);
+    font-weight: 100;
+    color: var(--primary);
+    text-align: center;
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: calc(2rem + 0.390625vw);
+    font-weight: 100;
+    color: var(--primary);
+    text-align: center;
+}
+
+p {
+    font-family: "Dosis", sans-serif;
+    font-size: calc(1rem + 0.390625vw);
+    color: var(--black);
+}
+
+p.jmenovka {
+    font-family: "DM Serif Display", serif;
+    color: var(--primary);
+    font-size: calc(1.7rem + 0.390625vw);
+    margin: 0.1em 0;
+}
+
+p.tucny {
+    font-weight: bold;
+}
+
+
+/*
+TiramisuText
+
+p.jmenovka
+p.Important
+p.Lower
+
+
+
+
+
+*/
+
+/* Navbar */
+.logo a {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: 100;
+    color: var(--white);
+}
+
+li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+p.tucny {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.activated {
+    font-weight: 700;
+}
+
+.tabulkaOteviraciDoba p:nth-child(odd) {
+    font-weight: 500;
+}
+
+/* Osoby */
+p.pozice {
+    margin: 0.1em 0;
+}
+
+.nazev {
+    font-size: calc(1.5rem + 0.390625vw);
+    margin-bottom: .2em;
+    font-weight: 700;
+}
+
+#odeslat {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+    font-size: 1.3rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+}
+
+input::placeholder, textarea::placeholder, select::placeholder {
+    font-family: "Dosis", sans-serif;
+}

@@ -1,0 +1,29 @@
+Závažné problémy:
+- Nejednotná typografie
+- Nejednotné paddingy a nezvětšující se design responsivně
+- Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
+- Chybí mi pomocí JS galerie
+- Chybí mi obrázky a některé nejsou dobře oříznuté
+
+
+
+Kontrola a opravy:
+# Obecné
+- Ořížnout obrázky
+- Opravit footer layout
+- Mezery jsou někde moc velké a někde moc malé
+-Footer dát do gridu/flexu a nastavit na telefony
+
+# Kontakty
+- Celá stránka je moc malá na vekých monitorech
+- Email se kryje s ikonou (Nyní je na telefonech moc daleko)
+
+- Na telefonu jsou moc velké mezery u mapy
+- Na telefonu jsou moc velké mezery u mailu a telefonu
+
+# O nás
+- Moc málo textu => Moc velké mezery mezi obrázkem a textem
+
+
+# Domů 
+- Celý nevyhovující W.I.P

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo & barevné schéma  -->
+    <!-- <meta name="theme-color" content="#525929"> NEFUNKČNÍ -->
+    <link rel="icon" href="../images/icons/favicon.svg">
+
+    <!-- Kaskádové styly  -->
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/navbarFooter.css">
+    <link rel="stylesheet" href="../styles/components.css">
+
+     <!-- Typografie  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Rabira</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Rabira</a>
+            </div>
+            <menu class="hMenu menu-toggle is-active">
+                <li><a href="../sites/index.html" class="activated">Domů</a></li>
+                <li><a href="../sites/onas.html">O nás</a></li>
+                <li><a href="../sites/galerie.html">Galerie</a></li>
+                <li><a href="../sites/kontakt.html">Kontakt</a></li>
+            </menu>
+            <div class="hMenu ikonky is-active">
+                <a id="FacebookIcon" href="https://www.facebook.com/"></a>
+                <a id="InstagramIcon" href="https://www.instagram.com/"></a>
+                <a id="MapsIcon" href="#"></a>
+            </div>
+            
+            <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="tiramisu">
+            <p>U nás</p>
+            <p>chutná</p>
+            <img class="tiramisuPreview" src="">
+            <p>život</p>
+            <p>sladce</p>
+        </div>
+        <section id="suroviny">
+            <article class="surovina1">
+                <img class="surovinaPreview" src="../images/icons/book.svg"> <!-- Nedat to sem přes css?  -->
+                <p class="tucny">Tradiční recepty</p>
+                <p class="popisSuroviny">U nás si každý najde to své, ať už preferuje klasické chutě nebo rád zkouší něco nového.</p>
+            </article>
+            <article id="surovina2">
+                <img class="surovinaPreview" src="../images/icons/award.svg"> <!-- Nedat to sem přes css?  -->
+                <p class="tucny">Kvalitní suroviny</p>
+                <p class="popisSuroviny">Všechny naše sladké dobroty pečeme s láskou a péčí z těch nejkvalitnějších surovin.</p>
+            </article>
+            <article id="surovina3">
+                <img class="surovinaPreview" src="../images/icons/globe.svg"> <!-- Nedat to sem přes css?  -->
+                <p class="tucny">Catering firemních akcí</p>
+                <p class="popisSuroviny">Nabízíme širokou škálu sladkých specialit, které potěší kolegy i klienty a zpříjemní vaši akci.</p>
+            </article>
+        </section>
+        <section class="recenze">
+            <article id="recenze1">
+                <img class="profilovkaRecenze" src="../images/people/adam.png">
+                <div class="obsahRecenze">
+                    <p class="jmenovka">Adam</p>
+                    <p class="hodnoceni">⭐⭐⭐⭐⭐</p>  <!-- Text nebo ikonky?  -->
+                    <p class="obsahRecenze">Dortíčky? Mňam! Čerstvé ovoce a belgická čokoláda, to je prostě paráda. A ten výběr! Dorty, zákusky, koláče, pralinky... Milá a ochotná obsluha mi s úsměvem poradila s výběrem. A to prostředí! Moderní a útulné, ideální pro posezení s přáteli. Bylo to jako vaření z čarovného pytlíku...</p>
+                </div>
+            </article>
+            <article id="recenze2">
+                <div class="obsahRecenze">
+                    <p class="jmenovka">Sofie</p>
+                    <p class="hodnoceni">⭐⭐⭐⭐</p>  <!-- Text nebo ikonky?  -->
+                    <p class="obsahRecenze">Dortíčky s čerstvým ovocem a lahodnou čokoládou lákají oči a roztančí chuťové pohárky. Milá paní s úsměvem poradí a pomůže vám vybrat ten pravý kousek sladkého štěstí. Útulné prostředí cukrárny vybízí k posezení s kamarádkami a sdílení sladkých tajemství. Každé sousto je sladká symfonie chutí a vůní.</p>
+                </div>
+                <img class="profilovkaRecenze" src="../images/people/sofie.png">
+            </article>
+        </section>
+        <h2> Náš výběr</h2>
+        <section class="nasVyber">
+            <img class="nasVyberPreview" src="../images/other/levandulovyDortik.jpg">
+            <div class="popisVyber">
+                <p class="jmenovka">Levandulovy dortík</p>
+                <p>Tento okouzlující dortík je pastvou pro oči i chuťové pohárky. Jemný fialový korpus s lehkou vanilkovou příchutí se snoubí s nadýchanou krémovou vrstvou s bílou čokolády a lahodným malinovým želé. Dortík zdobí křupavé crumble z kakaových sušenek a svěží maliny, které dodávají celému dezertu neodolatelnou chuťovou harmonii.</p>
+                <a href="../sites/galerie.html">Prohlédnout další</a>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footerInfo">
+            <div class="kudyknam">
+                <p class="tucny">Kudy k nám</p>
+                <p>Kavárna Rabira</p>
+                <p>Pod Zvonkem 12</p>
+                <p>463 01 Liberec</p>
+            </div>
+            <div class="kontakt">
+                <p class="tucny">Kontakt</p>
+                <p>info@rabira.cz</p>
+                <p>+420 725 888 653</p>
+                <p>kavárna a cukrárna</p>
+            </div>
+            <div class="oteviracidoba">
+                <p class="tucny">Otevírací doba</p>
+                <div class="tabulkaOteviraciDoba">
+                    <p>Pondělí</p><p>Zavřeno</p>
+                    <p>Út - Čt</p><p>10:00 - 11:00</p>
+                    <p>So - Ne</p><p>10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Cukrárna Rabira</p>
+            <p>Webové stránky vytvořil Marek Šollar</p>
+        </div>
+    </footer>
+    <script src="../hamburger.js"></script>
+</body>
+</html>
