@@ -6,12 +6,12 @@
 
     <!-- Logo & barevné schéma  -->
     <!-- <meta name="theme-color" content="#525929"> NEFUNKČNÍ -->
-    <link rel="icon" href="images/icons/favicon.svg">
+    <link rel="icon" href="../images/icons/favicon.svg">
 
     <!-- Kaskádové styly  -->
-    <link rel="stylesheet" href="styles/typography.css">
-    <link rel="stylesheet" href="styles/navbarFooter.css">
-    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/navbarFooter.css">
+    <link rel="stylesheet" href="../styles/components.css">
 
      <!-- Typografie  -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +27,15 @@
                 <a href="index.html">Rabira</a>
             </div>
             <menu class="hMenu menu-toggle is-active">
-                <li><a href="index.html" class="activated">Domů</a></li>
-                <li><a href="sites/onas.html">O nás</a></li>
-                <li><a href="sites/galerie.html">Galerie</a></li>
-                <li><a href="sites/kontakt.html">Kontakt</a></li>
+                <li><a href="../index.html" class="activated">Domů</a></li>
+                <li><a href="../onas.html">O nás</a></li>
+                <li><a href="../galerie.html">Galerie</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
             </menu>
             <div class="hMenu ikonky is-active">
                 <a id="FacebookIcon" href="https://www.facebook.com/"></a>
                 <a id="InstagramIcon" href="https://www.instagram.com/"></a>
-                <a id="MapsIcon" href="https://www.google.com/maps?ll=50.773162,15.064675&z=17&t=m&hl=cs&gl=CZ&mapclient=embed&cid=2875854342845495712"></a>
+                <a id="MapsIcon" href="#"></a>
             </div>
             
             <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
@@ -49,32 +49,34 @@
 
     <main>
         <div class="tiramisu">
-            <p>U nás</p>
-            <p>chutná</p>
-            <img class="tiramisuPreview" src="">
-            <p>život</p>
-            <p>sladce</p>
+            <div class="tiramisuBox">
+                <p id="unas">U nás</p>
+                <p id="chutna">chutná</p>
+                <img class="tiramisuPreview" src="../images/other/Tiramisu.png">
+                <p id="zivot">život</p>
+                <p id="sladce">sladce</p>
+            </div>
         </div>
         <section id="suroviny">
             <article class="surovina1">
-                <img class="surovinaPreview" src="images/icons/book.svg"> <!-- Nedat to sem přes css?  -->
+                <img class="surovinaPreview" src="../images/icons/book.svg"> <!-- Nedat to sem přes css?  -->
                 <p class="tucny">Tradiční recepty</p>
                 <p class="popisSuroviny">U nás si každý najde to své, ať už preferuje klasické chutě nebo rád zkouší něco nového.</p>
             </article>
             <article id="surovina2">
-                <img class="surovinaPreview" src="images/icons/award.svg"> <!-- Nedat to sem přes css?  -->
+                <img class="surovinaPreview" src="../images/icons/award.svg"> <!-- Nedat to sem přes css?  -->
                 <p class="tucny">Kvalitní suroviny</p>
                 <p class="popisSuroviny">Všechny naše sladké dobroty pečeme s láskou a péčí z těch nejkvalitnějších surovin.</p>
             </article>
             <article id="surovina3">
-                <img class="surovinaPreview" src="images/icons/globe.svg"> <!-- Nedat to sem přes css?  -->
+                <img class="surovinaPreview" src="../images/icons/globe.svg"> <!-- Nedat to sem přes css?  -->
                 <p class="tucny">Catering firemních akcí</p>
                 <p class="popisSuroviny">Nabízíme širokou škálu sladkých specialit, které potěší kolegy i klienty a zpříjemní vaši akci.</p>
             </article>
         </section>
         <section class="recenze">
             <article id="recenze1">
-                <img class="profilovkaRecenze" src="images/people/adam.png">
+                <img class="profilovkaRecenze" src="../images/people/adam.png">
                 <div class="obsahRecenze">
                     <p class="jmenovka">Adam</p>
                     <p class="hodnoceni">⭐⭐⭐⭐⭐</p>  <!-- Text nebo ikonky?  -->
@@ -87,16 +89,16 @@
                     <p class="hodnoceni">⭐⭐⭐⭐</p>  <!-- Text nebo ikonky?  -->
                     <p class="obsahRecenze">Dortíčky s čerstvým ovocem a lahodnou čokoládou lákají oči a roztančí chuťové pohárky. Milá paní s úsměvem poradí a pomůže vám vybrat ten pravý kousek sladkého štěstí. Útulné prostředí cukrárny vybízí k posezení s kamarádkami a sdílení sladkých tajemství. Každé sousto je sladká symfonie chutí a vůní.</p>
                 </div>
-                <img class="profilovkaRecenze" src="images/people/sofie.png">
+                <img class="profilovkaRecenze" src="../images/people/sofie.png">
             </article>
         </section>
         <h2> Náš výběr</h2>
         <section class="nasVyber">
-            <img class="nasVyberPreview" src="images/other/levandulovyDortik.jpg">
+            <img class="nasVyberPreview" src="../images/other/levandulovyDortik.jpg">
             <div class="popisVyber">
                 <p class="jmenovka">Levandulovy dortík</p>
                 <p>Tento okouzlující dortík je pastvou pro oči i chuťové pohárky. Jemný fialový korpus s lehkou vanilkovou příchutí se snoubí s nadýchanou krémovou vrstvou s bílou čokolády a lahodným malinovým želé. Dortík zdobí křupavé crumble z kakaových sušenek a svěží maliny, které dodávají celému dezertu neodolatelnou chuťovou harmonii.</p>
-                <a href="sites/galerie.html">Prohlédnout další</a>
+                <a href="../sites/galerie.html">Prohlédnout další</a>
         </section>
     </main>
 
@@ -129,6 +131,6 @@
             <p>Webové stránky vytvořil Marek Šollar</p>
         </div>
     </footer>
-    <script src="hamburger.js"></script>
+    <script src="../hamburger.js"></script>
 </body>
 </html>
