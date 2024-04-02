@@ -332,6 +332,5 @@ p.email::before {
 }
 
 .tiramisu {
-    margin: -2em -2em;
-    background-color: var(--secondary);
+    display: none;
 }
