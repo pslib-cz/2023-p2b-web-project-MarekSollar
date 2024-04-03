@@ -11,11 +11,14 @@
     <!-- Kaskádové styly  -->
     <link rel="stylesheet" href="../styles/typography.css">
     <link rel="stylesheet" href="../styles/navbarFooter.css">
+    <link rel="stylesheet" href="../styles/galerie.css">
 
      <!-- Typografie  -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
 
     <title>Galerie | Rabira</title>
 </head>
@@ -47,9 +50,43 @@
 
 
     <main>
-        <div class="prazdno">
-            <p>Nic tu není</p>
-        </div>
+        <div id="lightgallery" class="gallery__items">
+            <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/interier.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+
+              <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/produkt.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+
+              <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/produkt.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+
+              <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/produkt.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+
+              <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/produkt.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+
+              <div class="gallery__item ratio3to4">
+                <a href="../images/other/produkt.webp"> <!-- Méně detailní fotka (menší resolution)-->
+                  <img src="../images/other/produkt.webp" alt="Dodělat"> <!-- Více detailní fotka (větší resolution)-->
+                </a>
+              </div>
+        </div>  
     </main>
 
 
@@ -81,6 +118,22 @@
             <p>Webové stránky vytvořil Marek Šollar</p>
         </div>
     </footer>
-    <script src="../hamburger.js"></script>
 </body>
+<script src="../hamburger.js"></script>
+<script type="module">
+    import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm'
+    import lgThumbnail from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm'
+    import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
+    import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
+
+    lightgallery(document.querySelector('.gallery__items'), 
+    {
+        selector: document.querySelectorAll('.gallery__items a'),
+        plugins: [lgThumbnail, lgZoom, lgAutoplay],
+        slideShowAutoplay: false,
+        slideShowInterval:2000,
+subHtmlSelectorRelative: false, 
+allowMediaOverlap:false,
+    });
+</script>
 </html>

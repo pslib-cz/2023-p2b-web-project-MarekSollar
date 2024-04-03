@@ -84,23 +84,15 @@ p.pozice {
 }
 
 p.telefon::before {
-    content: "";
-    display: block;
-    background: url(../images/icons/phone.svg) no-repeat;
-    height: 2em;
-    aspect-ratio: 1/1;
-    float: left;
-    margin-right: -.5em;
+    content: url(../images/icons/phone.svg);
+    margin-right: 0.3em;
+    vertical-align: middle;
 }
 
 p.email::before {
-    content: "";
-    display: block;
-    background: url(../images/icons/mail.svg) no-repeat;
-    height: 2em;
-    aspect-ratio: 1/1;
-    float: left;
-    margin-right: -.5em;
+    content: url(../images/icons/mail.svg);
+    margin-right: 0.3em;
+    vertical-align: middle;
 }
 
 /* Onas */

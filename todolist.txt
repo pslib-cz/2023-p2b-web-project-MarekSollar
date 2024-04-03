@@ -27,3 +27,16 @@ Kontrola a opravy:
 
 # Domů 
 - Celý nevyhovující W.I.P
+
+
+Zpětná vazba:
+- Přidat srcset
+- Telefony grid, jinak bez gridu
+- Místo toho dávat telefon do @media, tak dát počítač do media
+- Ikonky nesmí být img, img má být pouze to co by slepý člověk mohl potřebovat vědět
+- Přidat alt tagy
+
+- Kontakty > Náš tým + Kontaktujte nás | Má být na jednom řádku na pc
+- Přidat Galerii
+- Onas nemusí být přegridovaný
+- Domů > ikonky u surovin mají nemají být img.
