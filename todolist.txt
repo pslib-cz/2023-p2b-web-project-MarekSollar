@@ -1,10 +1,13 @@
-Závažné problémy:
-- Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
-- Chybí mi obrázky a některé nejsou dobře oříznuté (Max. height 800px oříznout v paint.net)
+Prioritní:
 - BEM přidat 
-- Opravit ikonky v indexu (změnit z png na background-image)
 - Galerie overflow
 - Přidat ALT texty
-- Oříznou obrázky
+- Chybí mi obrázky a některé nejsou dobře oříznuté (Max. height 800px oříznout v paint.net)
+
+Střední priorita:
+- Opravit ikonky v indexu (změnit z png na background-image)
 - Kontakty > na počítači dát pak na jeden řádek Náš tým + Kontaktujte nás
+
+Ostatní:
 - Doopravit zbytečný flex, atd... Odstranit duplicity
+- Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
