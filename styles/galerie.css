@@ -9,4 +9,5 @@
 
 .gallery__item img {
   max-height: 15em;
+  border-radius: 5px;
 }

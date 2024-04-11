@@ -162,24 +162,44 @@ p.email::before {
 #suroviny {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "recepty suroviny catering";
     column-gap: 8em;
     text-align: center;
 }
-
+ 
+#suroviny div {
+    display: inline-block;
+    height: 5em;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
+#surovina1 div {
+    background-image: url(../images/icons/book.svg);
+}
+ 
+#surovina2 div {
+    background-image: url(../images/icons/trophy.svg);
+}
+ 
+#surovina3 div {
+    background-image: url(../images/icons/glass2.svg);
+}
+ 
 #surovina1 {
     grid-area: recepty;
 }
-
+ 
 #surovina2 {
     grid-area: suroviny;
 }
-
+ 
 #surovina3 {
     grid-area: catering;
 }
-
+ 
 #suroviny img {
     height: 5em;
     aspect-ratio: 1/1;
