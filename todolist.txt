@@ -1,15 +1,14 @@
 Prioritní:
 - BEM přidat 
-- Galerie 2 rozměry náhled a real fotka
-- Galerie opravit layout
 - Přidat ALT texty ke galerii
 - Chybí mi obrázky a některé nejsou dobře oříznuté (Max. height 800px oříznout v paint.net)
+- Galerie 2 rozměry náhled a real fotka
 
 Střední priorita:
 - Opravit ikonky v indexu (změnit z png na background-image)
 - Kontakty > na počítači dát pak na jeden řádek Náš tým + Kontaktujte nás
-- Předělat vše z Media Querry z telefonu do mainu a pc rozložení dát do Media Querry
 
 Ostatní:
 - Doopravit zbytečný flex, atd... Odstranit duplicity
+- Předělat vše z Media Querry z telefonu do mainu a pc rozložení dát do Media Querry
 - Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
