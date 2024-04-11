@@ -1,42 +1,14 @@
-Závažné problémy:
-- Nejednotná typografie
-- Nejednotné paddingy a nezvětšující se design responsivně
+Prioritní:
+- BEM přidat 
+- Přidat ALT texty ke galerii
+- Chybí mi obrázky a některé nejsou dobře oříznuté (Max. height 800px oříznout v paint.net)
+- Galerie 2 rozměry náhled a real fotka
+
+Střední priorita:
+- Opravit ikonky v indexu (změnit z png na background-image)
+- Kontakty > na počítači dát pak na jeden řádek Náš tým + Kontaktujte nás
+
+Ostatní:
+- Doopravit zbytečný flex, atd... Odstranit duplicity
+- Předělat vše z Media Querry z telefonu do mainu a pc rozložení dát do Media Querry
 - Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
-- Chybí mi pomocí JS galerie
-- Chybí mi obrázky a některé nejsou dobře oříznuté
-
-
-
-Kontrola a opravy:
-# Obecné
-- Ořížnout obrázky
-- Opravit footer layout
-- Mezery jsou někde moc velké a někde moc malé
--Footer dát do gridu/flexu a nastavit na telefony
-
-# Kontakty
-- Celá stránka je moc malá na vekých monitorech
-- Email se kryje s ikonou (Nyní je na telefonech moc daleko)
-
-- Na telefonu jsou moc velké mezery u mapy
-- Na telefonu jsou moc velké mezery u mailu a telefonu
-
-# O nás
-- Moc málo textu => Moc velké mezery mezi obrázkem a textem
-
-
-# Domů 
-- Celý nevyhovující W.I.P
-
-
-Zpětná vazba:
-- Přidat srcset
-- Telefony grid, jinak bez gridu
-- Místo toho dávat telefon do @media, tak dát počítač do media
-- Ikonky nesmí být img, img má být pouze to co by slepý člověk mohl potřebovat vědět
-- Přidat alt tagy
-
-- Kontakty > Náš tým + Kontaktujte nás | Má být na jednom řádku na pc
-- Přidat Galerii
-- Onas nemusí být přegridovaný
-- Domů > ikonky u surovin mají nemají být img.

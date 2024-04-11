@@ -83,6 +83,10 @@ p.pozice {
     margin: 0.1em 0;
 }
 
+.osoby a {
+    color: var(--black);
+}
+
 p.telefon::before {
     content: url(../images/icons/phone.svg);
     margin-right: 0.3em;
