@@ -193,6 +193,10 @@ footer p {
     margin: .3em;
 }
 
+footer a {
+    color: var(--white);
+}
+
 
 
 .tabulkaOteviraciDoba {
