@@ -7,5 +7,3 @@ Střední priorita:
 
 - Předělat vše z Media Querry z telefonu do mainu a pc rozložení dát do Media Querry
 - Duplicitní kód, bordel v css, není v souladu s Kazdovým Desaterem.
-
-Ostatní:
