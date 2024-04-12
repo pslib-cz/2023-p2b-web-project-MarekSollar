@@ -19,11 +19,11 @@ iframe {
     border-radius: 20px;
 }
 
-.adresa {
+.mapa__adresa {
     margin-top: 0;
 }
 
-.form {
+.formular__obsah {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -45,7 +45,7 @@ iframe {
     grid-area: email;
 }
 
-#zprava {
+#formular__zprava {
     grid-area: zprava;
 }
 
@@ -79,7 +79,7 @@ input,textarea, select {
     border-radius: 100%;
 }
 
-p.pozice {
+p.karta__pozice {
     margin: 0.1em 0;
 }
 
@@ -87,13 +87,13 @@ p.pozice {
     color: var(--black);
 }
 
-p.telefon::before {
+p.karta__telefon::before {
     content: url(../images/icons/phone.svg);
     margin-right: 0.3em;
     vertical-align: middle;
 }
 
-p.email::before {
+p.karta__email::before {
     content: url(../images/icons/mail.svg);
     margin-right: 0.3em;
     vertical-align: middle;
@@ -144,17 +144,6 @@ p.email::before {
 #o2 {
     grid-area: dortukazka;
 }
-
-.ikonky a {
-    width: 2em;
-    aspect-ratio: 1/1;
-    filter: invert(1);
-}
-
-#FacebookIcon {
-    background-image: url(../images/icons/facebook.svg);
-}
-
 
 /*INDEX*/
 
@@ -225,7 +214,7 @@ p.email::before {
 }
 
 
-.hodnoceni {
+.recenze__obsah__hodnoceni {
     margin: 0;
 }
 
@@ -276,7 +265,7 @@ p.email::before {
     padding-top: 1.5em;
 }
 
-.tiramisuBox {
+.tiramisu__box {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
@@ -285,35 +274,35 @@ p.email::before {
         "zivot tiramisu sladce";
 }
 
-.tiramisuBox img {
+img.tiramisu__box__image {
     grid-area: tiramisu;
     height: 30em; /* Původně bylo 20 em*/
     aspect-ratio: 9/16;
     margin-bottom: -2em;
 }
 
-#unas {
+p#tiramisu__box__text--unas {
     grid-area: unas;
     align-self: end;
     justify-self: end;
     padding-right: 1.5em;
 }
 
-#chutna {
+p#tiramisu__box__text--chutna {
     grid-area: chutna;
     align-self: end;
     justify-self: start;
     padding-left: 1em;
 }
 
-#zivot {
+p#tiramisu__box__text--zivot {
     grid-area: zivot;
     align-self: start;
     justify-self: end;
     padding-right: 1em;
 }
 
-#sladce {
+p#tiramisu__box__text--sladce {
     grid-area: sladce;
     align-self: start;
     justify-self: start;
@@ -330,7 +319,7 @@ p.email::before {
         flex-direction: column;
     }
 
-    .form {
+    .formular__obsah {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "jmeno"
@@ -401,15 +390,11 @@ p.email::before {
         text-align: center;
     }
 
-    .mapa {
-        flex-direction: column;
-    }
-
     .osoby {
         flex-direction: column;
     }
 
-    .form {
+    .formular__obsah {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "jmeno"

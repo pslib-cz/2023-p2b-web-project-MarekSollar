@@ -169,7 +169,7 @@ footer {
     border-top: 10px solid var(--primary);
 }
 
-.footerInfo {
+.footer_info {
     background-color:  var(--secondary);
     display: flex;
     justify-content: space-around;
@@ -180,7 +180,7 @@ footer {
     border-top: 5px solid var(--white);
 }
 
-.copyright {
+.footer__copyright {
     padding: .5em 2em;
     display: flex;
     justify-content: space-around;
@@ -197,9 +197,7 @@ footer a {
     color: var(--white);
 }
 
-
-
-.tabulkaOteviraciDoba {
+.footer__info__oteviracidoba__tabulka {
     display: grid;
     grid-template-columns: 1fr auto;
 }

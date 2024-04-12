@@ -51,9 +51,9 @@
         <h1>Kontakt</h1>
         <section class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.5780195561201!2d15.062698898246556!3d50.77268094640393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e83%3A0x27e91649b311f9a0!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgYSBWecWhxaHDrSBvZGJvcm7DoSDFoWtvbGEsIExpYmVyZWMsIHDFmcOtc3DEm3Zrb3bDoSBvcmdhbml6YWNl!5e0!3m2!1scs!2scz!4v1711911793497!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="adresa">
-                <p class="nazev">Cukrárna Rabira</p>
-                <p class="adresa">Masarykova 3, 460 84 Liberec</p>
+            <div class="mapa__adresa">
+                <p class="mapa__nazev">Cukrárna Rabira</p>
+                <p class="mapa__adresa">Masarykova 3, 460 84 Liberec</p>
                 <p><strong>IČO:</strong> 4201234567</p>
                 <p><strong>DIČ:</strong> CZ420123456</p>
                 <p><strong>E-mail:</strong> info@rabira.cz</p>
@@ -63,74 +63,74 @@
             <h2>Náš tým</h2>
             <div class="osoby">
                 <div class="karta">
-                    <img class="profilovka" src="../images/people/jan.webp" alt="Majitel Jan">
+                    <img class="osoby__karta__profilovka" src="../images/people/jan.webp" alt="Majitel Jan">
                     <p class="jmenovka">Jan</p>
-                    <p class="pozice">Majitel</p>
-                    <p class="email"><a href="mailto:jan@rabira.cz">jan@rabira.cz</a></p>
-                    <p class="telefon"><a href="tel:+420777123456">+420 777 123 456</a></p>
+                    <p class="karta__pozice">Majitel</p>
+                    <p class="karta__email"><a href="mailto:jan@rabira.cz">jan@rabira.cz</a></p>
+                    <p class="karta__telefon"><a href="tel:+420777123456">+420 777 123 456</a></p>
                 </div>
                 <div class="karta">
-                    <img class="profilovka" src="../images/people/anna.webp" alt="Vedoucí Anna">
+                    <img class="karta__profilovka" src="../images/people/anna.webp" alt="Vedoucí Anna">
                     <p class="jmenovka">Anna</p>
-                    <p class="pozice">Vedoucí</p>
-                    <p class="email"><a href="mailto:anna@rabira.cz">anna@rabira.cz</a></p>
-                    <p class="telefon"><a href="tel:+420732987654">+420 732 987 654</a></p>
+                    <p class="karta__pozice">Vedoucí</p>
+                    <p class="karta__email"><a href="mailto:anna@rabira.cz">anna@rabira.cz</a></p>
+                    <p class="karta__telefon"><a href="tel:+420732987654">+420 732 987 654</a></p>
                 </div>
                 <div class="karta">
-                    <img class="profilovka" src="../images/people/petr.webp" alt="Cukrář Petr">
+                    <img class="karta__profilovka" src="../images/people/petr.webp" alt="Cukrář Petr">
                     <p class="jmenovka">Petr</p>
-                    <p class="pozice">Cukrář</p>
-                    <p class="email"><a href="mailto:anna@rabira.cz">petr@rabira.cz</a></p>
-                    <p class="telefon"><a href="tel:+420608543210">+420 608 543 210</a></p>
+                    <p class="karta__pozice">Cukrář</p>
+                    <p class="karta__email"><a href="mailto:anna@rabira.cz">petr@rabira.cz</a></p>
+                    <p class="karta__telefon"><a href="tel:+420608543210">+420 608 543 210</a></p>
                 </div>
                 <div class="karta">
-                    <img class="profilovka" src="../images/people/bara.webp" alt="Cukřařka Bára">
+                    <img class="karta__profilovka" src="../images/people/bara.webp" alt="Cukřařka Bára">
                     <p class="jmenovka">Bára</p>
-                    <p class="pozice">Cukrářka</p>
-                    <p class="email"><a href="mailto:bara@rabira.cz">bara@rabira.cz</a></p>
-                    <p class="telefon"><a href="tel:+420724365890">+420 724 365 890</a></p>
+                    <p class="karta__pozice">Cukrářka</p>
+                    <p class="karta__email"><a href="mailto:bara@rabira.cz">bara@rabira.cz</a></p>
+                    <p class="karta__telefon"><a href="tel:+420724365890">+420 724 365 890</a></p>
                 </div>
             </div>
         </section>
         <section class="formular">
             <h2>Kontaktujte nás</h2>
             <form>
-                <div class="form">
-                    <input type="text" id="jmeno" placeholder="Jméno" required>
-                    <input type="text" id="prijmeni" placeholder="Příjmení" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="zprava" rows="4" placeholder="Zpráva" required></textarea>
+                <div class="formular__obsah">
+                    <input type="formular__text" id="jmeno" placeholder="Jméno" required>
+                    <input type="formular__text" id="prijmeni" placeholder="Příjmení" required>
+                    <input type="formular__email" id="email" placeholder="Email" required>
+                    <textarea id="formular__zprava" rows="4" placeholder="Zpráva" required></textarea>
                 </div>
-                <input id="odeslat" type="submit" value="Odeslat">
+                <input id="formular__odeslat" type="submit" value="Odeslat">
             </form>
         </section>
     </main>
 
 
     <footer>
-        <div class="footerInfo">
-            <div class="kudyknam">
+        <div class="footer_info">
+            <div class="footer_info__kudyknam">
                 <p class="tucny">Kudy k nám</p>
                 <p>Kavárna Rabira</p>
                 <p>Pod Zvonkem 12</p>
                 <p>463 01 Liberec</p>
             </div>
-            <div class="kontakt">
+            <div class="footer_info__kontakt">
                 <p class="tucny">Kontakt</p>
                 <p><a href="mailto:info@rabira.cz">info@rabira.cz</a></p>
                 <p><a href="tel:+420725888653">+420 725 888 653</a></p>
                 <p>kavárna a cukrárna</p>
             </div>
-            <div class="oteviracidoba">
+            <div class="footer_info__oteviracidoba">
                 <p class="tucny">Otevírací doba</p>
-                <div class="tabulkaOteviraciDoba">
+                <div class="footer__info__oteviracidoba__tabulka">
                     <p>Pondělí</p><p>Zavřeno</p>
                     <p>Út - Čt</p><p>10:00 - 11:00</p>
                     <p>So - Ne</p><p>10:00 - 18:00</p>
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="footer__copyright">
             <p>© 2024 Cukrárna Rabira</p>
             <p>Webové stránky vytvořil Marek Šollar</p>
         </div>

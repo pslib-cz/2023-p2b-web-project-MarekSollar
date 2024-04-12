@@ -87,7 +87,7 @@ p.tucny {
     font-weight: 700;
 }
 
-.tabulkaOteviraciDoba p:nth-child(odd) {
+.footer__info__oteviracidoba__tabulka p:nth-child(odd) {
     font-weight: 500;
 }
 
@@ -96,13 +96,13 @@ p.pozice {
     margin: 0.1em 0;
 }
 
-.nazev {
+.mapa__nazev {
     font-size: calc(1.5rem + 0.390625vw);
     margin-bottom: .2em;
     font-weight: 700;
 }
 
-#odeslat {
+#formular__odeslat {
     background-color: var(--secondary);
     color: var(--white);
     border: 2px solid var(--secondary);
@@ -115,7 +115,7 @@ input::placeholder, textarea::placeholder, select::placeholder {
     font-family: "Dosis", sans-serif;
 }
 
-.tiramisuBox p {
+.tiramisu__box p {
     font-family: "DM Serif Display", serif;
     font-size: calc(5rem + 0.390625vw); /* Původně bylo 4 rem*/
     margin: 0;
@@ -129,7 +129,7 @@ input::placeholder, textarea::placeholder, select::placeholder {
         padding: 0 1.5em;
     }
 
-    .tiramisuBox p {
+    .tiramisu__box p {
         font-size: calc(3rem + 0.390625vw);
     }
 }
