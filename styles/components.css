@@ -114,9 +114,7 @@ p.karta__email::before {
 }
 
 @media only screen and (min-width: 360px) and (max-width:960px) {
-    .onasGrid {
-        row-gap: 2em;
-    }
+    
 }
 
 #s1 {
@@ -201,6 +199,7 @@ p.karta__email::before {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 2em;
+    padding-bottom: 3em;
 }
 
 #recenze2 {
@@ -208,11 +207,6 @@ p.karta__email::before {
     grid-template-columns: 4fr 1fr;
     gap: 2em;
 }
-
-#recenze1 {
-    padding-bottom: 3em;
-}
-
 
 .recenze__obsah__hodnoceni {
     margin: 0;
@@ -337,13 +331,11 @@ p#tiramisu__box__text--sladce {
             "atmosfera"
             "dortukazka"
             "nabidka";
-
+        row-gap: 2em;
     }
 
-    /* Kravina opravit */
     .onasGrid img { 
         height: 50vw;
-        width: auto;
     }
 
     #suroviny {
@@ -369,7 +361,7 @@ p#tiramisu__box__text--sladce {
         grid-area: sofieRecenze;
     }
 
-    #recenze2 .profilovkaRecenze {
+    #recenze2 .recenze__profilovka {
         grid-area: sofie;
     }
 
@@ -418,7 +410,7 @@ p#tiramisu__box__text--sladce {
             margin: 0 -1.5em 4em -1.5em;
         }
 
-    .tiramisuBox {
+    .tiramisu__box {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         justify-items: center;
@@ -427,10 +419,6 @@ p#tiramisu__box__text--sladce {
             "chutna tiramisu"
             "zivot tiramisu"
             "sladce tiramisu";
-    }
-
-    .tiramisuBox img {
-        height: 18em;
     }
 
     #unas {
@@ -451,3 +439,18 @@ p#tiramisu__box__text--sladce {
         padding-left: 1em;
     }
 }
+
+
+@media only screen and (max-width:500px) {
+    img.tiramisu__box__image {
+        height: 21em;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    img.tiramisu__box__image {
+        height: 17em;
+    }
+}
+
+
